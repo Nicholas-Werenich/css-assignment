@@ -1,3 +1,10 @@
+<!--
+  Name: Nicholas Werenich
+  Course: Software Development 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 11/13/2022
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,53 +12,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 3</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <!--
+      Link that attaches the external stylesheet to the webpage.
+    -->
+    <link rel="stylesheet" href="style-sheets/main.css" />
   </head>
   <!--
-    https://www.youtube.com/watch?v=I5rHJzenBds
+    Internal styling for elements specific to this webpage.
   -->
   <style>
-    #Copyright {
-      border: 0px;
+    /*
+     Adds some space at the bottom of the section to seperation it from the rest.
+    */
+    section {
+      margin-bottom: 180px;
+    }
+    /*
+      Turns the video into a block element, sets margins to auto and aligns it to the center with float.
+    */
+    #video {
+      display: block;
+      margin: auto;
+      float: center;
+    }
+    /*
+      Turns the link into a block element and centers it.
+    */
+    #Iframe-link {
+      display: block;
+      text-align: center;
     }
   </style>
   <body>
+    <!--
+      Header contains the main heading and a horizontal line for seperation.
+    -->
     <header>
       <h1>Treaty 3</h1>
+      <hr />
     </header>
+    <!--
+      Main contains the main content.
+    -->
     <main>
-      <h2>The Purpose of Treaty 3</h2>
-      <p>
-        After negotiating for 2 years, the Canadian government tried to
-        negociate a treaty with the Ojibwe based on the new Canadian Pacific
-        Railway. If it were to go from Lake Superior to the Red River, it would
-        have to pass through their territory.
-      </p>
-      <img src="images/Treaty3_Area_Map.jpg" width="500" alt="" />
-      <h2>The Terms of the Treaty</h2>
-      <p>
-        The Canadian government agreed to pay a one time fee of $12 per person,
-        $5 yearly and provide farming equipment for the Ojibwe. The Ojibwe in
-        turn surrendered their rights to their land, but kept the ability to
-        hunt and fish on the land until the goverment used it for different
-        purposes.
-      </p>
-      <img src="images/treaty big map.png" width="500" alt="" />
-      <h2>Who was Involved</h2>
-      <p>
-        Those involved in the signing of the treaty were the Saulteaux (Ojibwe)
-        people and the Candadian government. Some bands were unable to make it
-        to the negotiations but they were added in an adhesion in 1873 and
-        another in 1874. Shortly after, the Metis around the land of treaty
-        three were added in another adhesion in 1875.
-      </p>
+      <!--
+        Section explaining various aspects of treaty 3 with accompanying pictures.
+      -->
+      <section>
+        <!--
+          Image showing the area of treaty 3.
+        -->
+        <img
+          src="images/Treaty3_Area_Map.jpg"
+          width="500"
+          alt="An image showing the area of treaty 3. The majority of it is
+          located in Ontario with a small part of the left in Manitoba. It shows
+          blue dots representing cities and red dots representing the First Nations." />\
+        <!--
+          Paragraph and heading about why treaty 3 was made.
+        -->
+        <h2 class="home-sub-heading">The Purpose of Treaty 3</h2>
+        <p>
+          The Canadian government created a treaty with the
+          <span>Saulteaux</span> (also called Anishinaabe and are a branch of
+          the Ojibwe) to build the new <span>Canadian Pacific Railway.</span> If
+          it were to go from Lake Superior to the Red River, it would have to
+          pass through their territory. The negotiations took 2 years and was
+          signed on October 3<sup>rd</sup>, 1873.
+        </p>
+        <br />
+        <br />
+        <!--
+          Paragraph and heading about the aspects agreed upon in treaty 3.
+        -->
+        <h2 class="home-sub-heading">The Terms of the Treaty</h2>
+        <p>
+          The Canadian government agreed to pay a one time fee of $12 per
+          person, $5 yearly and provide farming equipment for the
+          <span>Saulteaux.</span> The <span>Saulteaux</span> in turn surrendered
+          their rights to their land, but kept the ability to hunt and fish on
+          the land until the goverment used it for different purposes.
+        </p>
+        <br />
+        <br />
+        <!--
+          Image showing all treaty areas in Canada.
+        -->
+        <img
+          src="images/treaty big map.png"
+          width="500"
+          alt="An image of canada with coloured areas representing each treaty.
+          Each area has the treaty number on it and the year it was signed." />
+        <!--
+          Paragraph and heading about those involved in treaty 3.
+        -->
+        <h2 class="home-sub-heading">Who was Involved</h2>
+        <p>
+          Those involved in the signing of the treaty were the
+          <span>Saulteaux</span> people and the Candadian government. Some bands
+          were unable to make it to the negotiations but they were added in an
+          adhesion in 1873 and another in 1874. Shortly after, the
+          <span>Metis</span> around the land of treaty three were added in
+          another adhesion in 1875.
+        </p>
+      </section>
+      <!--
+        Div containing an Iframe and a link to the video in the Iframe.
+      -->
+      <div>
+        <a href="https://www.youtube.com/watch?v=__mFSLqDaiE" id="Iframe-link"
+          >Youtube video about the treaty 3 and the Metis involvment.</a
+        >
+        <!--
+          Video discussing treaty 3.
+        -->
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/__mFSLqDaiE"
+          title="Youtube video about the treaty 3 and the Metis involvment."
+          frameborder="0"
+          width="560"
+          height="315">
+        </iframe>
+      </div>
+      <br />
     </main>
+    <!--
+      Footer holding copyright and contact info.
+    -->
     <footer>
       <hr />
       <a href="mailto: motherisatthestore@gmail.com"
         >Email: motherisatthestore@gmail.com</a
       >
-      <p id="Copyright">&#169; Nicholas Werenich</p>
+      <p id="copyright">&#169; Nicholas Werenich</p>
     </footer>
   </body>
 </html>

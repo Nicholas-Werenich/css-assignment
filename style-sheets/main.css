@@ -1,0 +1,62 @@
+/*
+  Makes the background slightly yellow.
+*/
+body {
+  background-color: #fffffb;
+}
+/*
+  Makes h1 and h2 aligned to the center and changes the font.
+*/
+h1,
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+  Changes h2 headings in the home page to align left.
+*/
+.home-sub-heading {
+  text-align: left;
+}
+/*
+  Makes images align to the left.
+*/
+img {
+  float: right;
+}
+/*
+  Aligns text to the left, changes the font to Garamond, changes the font size,
+  adds 800px margin on the right, 15 px of padding, 2px black border with rounded
+  edges and a background color slightly different than the page background.
+*/
+p {
+  text-align: left;
+  font-family: Garamond, "Baskerville Old Face", "Times New Roman", serif;
+  font-size: 18px;
+  margin-right: 800px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fffffa;
+}
+/*
+  Bolds and underlines important words.
+*/
+span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*
+  Aligns the text to the center
+*/
+footer {
+  text-align: center;
+}
+/*
+  Removes the border, aligns the text to center and sets the margins to auto.
+*/
+#copyright {
+  border: 0px;
+  text-align: center;
+  margin: auto;
+}
